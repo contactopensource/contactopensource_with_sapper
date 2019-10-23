@@ -1,0 +1,7 @@
+#!/bin/sh
+
+x=static/robots.txt && git a $x && git cm "Add robots exclusion file" $x
+x=static/cdn/bulma && git a $d && git cm "Add CDN of Bulma CSS framework" $x
+x=static/cdn/fontawesome && git a $d && git cm "Add CDN of Font Awesome typography" $x
+x=doc && mkdir -p $x && x=$x/.gitkeep && touch $x && git a $x && git cm "Add document directory" $x
+x=doc/screenshots && mkdir -p $x && x=$x/.gitkeep && touch $x && git a $x && git cm "Add screenshots directory" $x
